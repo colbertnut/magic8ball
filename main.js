@@ -1,24 +1,16 @@
-/*function clearAll() {
-val = 0;
-operator = 0;
-total = 0;
-input.value = 0;
-label.innerHTML = 0;
-
+function test() {
+var answer1 = "wouldn't it be funny to die in a living room";
+var answer2 = "You know you're asking a plastic ball full of blue water...";
+var answer3 = "Four score & seven years ago";
+var answer4 = "!TRY AGAIN!";
+var answer5 = "A full mouth gathers no feet";
+var easterEgg = "a starship ride has been promised to you by the galactic wizard";
+var myarray = new Array(answer1, answer2, answer3,  answer4, answer5, easterEgg);
+console.log(myarray);
+var random = myarray[Math.floor(Math.random() * myarray.length)];
+document.getElementById("container").innerHTML=random;
 }
 
-var total = 0;
-var operator;
-var val;
-
-var label = document.getElementById('total');
-var input = document.getElementById('input');
-input.value = 0;
-label.innerHTML = total;
-
-function magicEightBall() {
-	val = 0;
-	input.value = 0;
-	label.innerHTML = 0;
-
+function clearAll(){
+  document.getElementById("container").innerHTML="";
 }

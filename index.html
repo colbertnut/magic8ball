@@ -1,41 +1,29 @@
-//Start with HTML / CSS to style a magic eight ball
-//Have a input that you take user input from for the eight ball question
-//Have the eight ball generate a random answer
-//Clear out the input after the answer
-//Be able to keep asking questions and "shaking" the eight ball for answers
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-	<title>Magic 8 Ball</title>
+   <script type="text/javascript">
+      function check_me(ev) {
+        ev.preventDefault();
+        //alert("answer")
+        test();
+      }
+   </script>
+<title>Magic 8 Ball</title>
 </head>
 <body>
-	<div class="center-align intro col s6">
-	<div class="row black white-text input-field col s12" id="calc">
-	</div>
-	<div class="row">
-	<button onclick="myFunction()">Try it</button>
-
-<script>
-function magicEightBall() {
-    var x = document.createElement("INPUT");
-    x.setAttribute("type", "text");
-    x.setAttribute("value", "what are you talking about");
-    document.body.appendChild(x);
-}
-</script>
-8BALLHERE// onclick populate a question 
-		//inner.HTML - click button / text box - clear out text after event
-		//1 answer
-		//2 answer
-		//3 answer
-		//4 answer
-		//5 answer
-		//easter egg 
-		<button class="waves-effect btn col s8 black border-radius:50" onClick="setVal()">8</button>
-		<button onclick="clearAll()" class="btn col s12 orange">clear</button>
-	</div>
+  <div class="center intro col s8">
+    <div class="row purple black-text input-field col s12" id="magic">
+      <div class="container">
+    <button type="button" onclick="check_me(event)" class="circle" id="container">MAGIC 8 BALL</button>
+      <input id="userInput" type="text" class="center"></input>
+    </div>
+      <button onclick="clearAll()" class="btn col s12 grey">Next Question</button>
+      <p id="message"></p>
+    </div> 
+    </div>
+  </div>
 </body>
 </html>
